@@ -1,7 +1,6 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
-import { USER_STATUS_CLASS_MAP, USER_STATUS_TEXT_MAP } from "@/constants.jsx";
-import TasksTable from "../Task/TasksTable";
+import TasksTable from "@/Pages/Task/TaskTable.jsx";
 export default function Show({ auth, user, tasks, queryParams }) {
   return (
     <AuthenticatedLayout
@@ -35,19 +34,6 @@ export default function Show({ auth, user, tasks, queryParams }) {
                     <p className="mt-1">{user.name}</p>
                   </div>
 
-                  <div className="mt-4">
-                    <label className="font-bold text-lg">User Status</label>
-                    <p className="mt-1">
-                      <span
-                        className={
-                          "px-2 py-1 rounded text-white " +
-                          USER_STATUS_CLASS_MAP[user.status]
-                        }
-                      >
-                        {USER_STATUS_TEXT_MAP[user.status]}
-                      </span>
-                    </p>
-                  </div>
                   <div className="mt-4">
                     <label className="font-bold text-lg">Created By</label>
                     <p className="mt-1">{user.createdBy.name}</p>

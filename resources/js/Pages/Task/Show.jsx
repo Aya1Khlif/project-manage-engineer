@@ -5,7 +5,7 @@ import {
   TASK_PRIORITY_TEXT_MAP,
   TASK_STATUS_CLASS_MAP,
   TASK_STATUS_TEXT_MAP,
-} from "@/constantant";
+} from "@/constants.jsx";
 export default function Show({ auth, task }) {
   return (
     <AuthenticatedLayout

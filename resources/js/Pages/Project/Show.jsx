@@ -3,7 +3,7 @@ import { Head, Link } from "@inertiajs/react";
 import {
   PROJECT_STATUS_CLASS_MAP,
   PROJECT_STATUS_TEXT_MAP,
-}  from "@/constantant";
+}  from "@/constants.jsx";
 import TasksTable from "../Task/TaskTable";
 export default function Show({ auth, success, project, tasks, queryParams }) {
   return (
