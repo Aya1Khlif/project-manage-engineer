@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
 import Checkbox from '@/Components/Checkbox';
-import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
+import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
+import { useEffect } from 'react';
 
 export default function Login({ status, canResetPassword }) {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -83,7 +83,7 @@ export default function Login({ status, canResetPassword }) {
                             href={route('password.request')}
                             className="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
                         >
-                            Forgot password?
+                            Forgot password? Try agin 
                         </Link>
                     )}
                     <PrimaryButton className="ms-4" disabled={processing}>
