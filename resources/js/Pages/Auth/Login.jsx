@@ -83,7 +83,7 @@ export default function Login({ status, canResetPassword }) {
                             href={route('password.request')}
                             className="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
                         >
-                            Forgot your password ?!
+                            Forgot your password?
                         </Link>
                     )}
                     <PrimaryButton className="ms-4" disabled={processing}>
@@ -94,9 +94,9 @@ export default function Login({ status, canResetPassword }) {
                             href={route('register')}
                             className="underline text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
                         >
-                       Don't have an account? Register a new account now!
+                       Don't have an account? Register a new account!
                         </Link>
-                 
+
             </form>
         </GuestLayout>
     );
